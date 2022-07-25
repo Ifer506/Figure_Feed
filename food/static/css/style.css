@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.mina{
+    padding-left: 270px;
+    margin-top: 50px;
+    display: absolute;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.lost{
+    width: 78%;
+    height: 70px;
+    background: rgb(227, 152, 23);
+    align-items: center;
+    border-radius: 50px;
+    padding : 20px 30px;
+    backdrop-filter:blur(5px) saturate(200%) ;
+    margin-top: 1cm;
+    margin-left: 2cm;
+    
+}
+
+.lost input{
+    background: transparent;
+    flex-grow :1;
+    flex :1;
+    border: 0;
+    outline: none ;
+    padding: 10px 10 px;
+    font-size: 25px;
+    color: white;
+}
+
+.lost ::placeholder{
+    color: rgb(203, 193, 183);
+
+}
+
+.lost button{
+    flex-grow :1;
+
+    border-radius: 50%vh;
+    background: rgb(226, 112, 5);
+    background-color: transparent;
+    border: 1px solid transparent;        
+    cursor: pointer;
+    text-align: center;
+    
+} 
+
+.lost button img {
+    width: 30px;
+}
+
+.lost button:hover {
+    cursor: pointer;
+}
+
+.mina h1{
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.mina h2{
+    font-size: 80px;
+    font-weight: 999;
+    align-items: center;
+    padding-left:280px;
+}
+.imgBox{
+    margin: 10px;
+    padding-right: 190px;
+}
+
+
+
+
