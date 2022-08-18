@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+
+.bod{
+    height: 100%;
+    width: 100%;
+    background-image: url(),linear-gradient(rgb(255,255,255) , rgb(231, 194, 162));
+
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    
+    
+}
+/* button, input, optgroup, select, textarea{
+    font-size: none;
+} */
+
+.Form{
+    width: 380px ;
+    height: 570px;
+    position :relative;
+    margin: 80px 250px auto;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+/* .title{
+    padding-left: 120px;
+    font-size: medium;
+    font-style: normal;
+    
+} */
+
+.but-box{
+    width: 195px;
+    margin:35px auto;
+    position :relative;
+    box-shadow: 0 0 19px 8px rgb(255, 255, 255);
+    border-radius: 30px;
+    
+}
+
+.toggle{
+    padding: 12px 27px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position:relative;
+    
+}
+
+
+
+.bot{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 105px;
+    height: 100%;
+    background: linear-gradient(to right,rgb(166, 154, 26),rgb(238, 139, 9));
+    border-radius: 40px;
+    transition: 0.5s;
+    
+    
+}
+
+.bhag{
+    top: 170px;
+    width: 295px;
+    transition: 0.5s;
+    position : absolute;
+
+}
+
+.bhara{
+    padding-left: 10px;
+    padding-top: 0px;
+    width: 100%;
+    margin: 8%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1.5px solid black;
+    background: transparent;
+    font-size: none;
+    outline: none;
+
+}  
+
+.chk{
+    margin: 1px 5px 20px 20px;
+}
+
+.chk span{
+    font-size: small;
+    position: absolute;
+    left : 20px;
+}
+
+.lakha{
+    width: 70%;
+    height: 50%;
+    padding: 8px 30px;
+    cursor: pointer;
+    position: relative;
+    margin: 20px;
+    left: 47px;
+    top: 20px;
+    border: 0px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 15px;
+    background : linear-gradient(to right,orange,red);
+    
+}
+
+.poof{
+    padding-left: 200px;
+    font-size: small;
+    text-decoration: none;
+}
+
+#login{
+    left: 30px ;
+}
+
+#Signin{
+    left:450px ;
+}

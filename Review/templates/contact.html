@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/contact.css' %}" rel="stylesheet" type="text/css"/>
+    <title>Contact us</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    {% block content %}
+    <div class = "container">
+        <h1> Share us your thoughts </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Delectus, itaque aspernatur, enim nam mollitia doloribus <br>
+         nesciunt adipisci, unde asperiores sunt tempore amet minima 
+         assumenda! Optio!
+        </p>
+        <div class ="contact-box">
+            <div class="contact-left">
+                <h3>Send your request</h3>
+                
+                <form action="contact" method="post">
+                    {% csrf_token %}
+                    <div class="input-row">
+                        <div class="input-group">
+                          <label>Name</label>
+                          <input type="text" placeholder="Ash ketchup" id = "customer_name" name="customer_name">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Phone</label>
+                        <input type="phone" placeholder="9841123456" id = "phone" name="phone">
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="text"placeholder="pokeball@gmail.com" id="customer_email" name="customer_email">
+                        </div>
+                    </div> 
+        
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your Message" id = "message" name="message"></textarea>
+                    <button type ="submit">Submit</button> 
+                </form>
+            </div>
+    
+            <div class="contact-right">
+                <h3> Find us </h3>
+
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>contactus@example.com</td>
+                    </tr>
+
+        
+                    <tr>
+                        <td>Phone</td>
+                        <td>+977 9841200000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Address</td>
+                        <td>#212,Somewhere,7th cross <br>
+                        Some layout,Some Road,Ratnapark <br>
+                        Mt.Everest
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    
+        </div>
+    </div>
+
+</body>
+
+{% endblock%}
+</html>

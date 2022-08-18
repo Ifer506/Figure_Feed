@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        
+        <meta name ="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title> Figure feed </title>
+        <!-- <link href="/food/css/log.css" rel="stylesheet" type="text/css"/> -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <div class="container">
+            <div class="mina">
+                <h1>Let the people know Your </h1>
+                <h2>Taste</h2>
+
+                <!-- <form action="" class = "lost">
+                    <input type="text" placeholder = "Location" name = "hell">
+                    <button type="submit"  >
+                        <img src="{% static 'Img/search.png' %}"> 
+                    </button>
+                    
+                </form> -->
+<!-- 
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Location">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+            </div>
+
+            <div class ="imgBox">
+                <img src ="{% static 'Img/food3c.png' %}">
+            </div>
+
+            
+        </div>
+        <div class = "list">
+            {% include 'Drop_but.html' %}
+        </div>
+
+        <div class = "row">
+            <div class = "col-md">
+                <div class = "card card-body">
+                    <h3>Reviews</h3>
+                    <table class="table">
+                        <tr>
+                            <th>Rating</th>
+                            <th>Price</th>
+                            <th>Item</th>
+                            <th>Location</th>
+                        </tr>
+                        {%for i in review%}
+                            <tr>
+                                <td>{{i.Rating}}</td>
+                                <td>{{i.Price}}</td>
+                                <td>{{i.Item}}</td>
+                                <td>{{i.Location}}</td>
+                            </tr>
+                        {% endfor %}
+                        </table>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+    </body>
+</html>

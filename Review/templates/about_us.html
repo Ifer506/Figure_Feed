@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    {% load static %}
+    <link rel = "stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+    <script src="https://kit.fontawsome.com/a076d05399.js"></script>
+</head>
+<body>
+    {% include 'navbar.html'%}
+    {% block content%}
+    <div class="container">
+
+        <div class="letters">
+            <div class = "first">
+                <div class = content>
+                    <div class = "cont2">
+                        <h1>Our mission</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corrupti perferendis atque laudantium ea, eius id consectetur nam. Sit reiciendis atque distinctio ab reprehenderit, ducimus perferendis natus eveniet dolorem! Libero, molestias labore. Expedita doloremque veniam, consequuntur unde exercitationem, quam quo reiciendis cum veritatis sit, corporis facilis rem qui aut quos.
+                        </p>
+                    </div>
+                    <img class="img0" src = "{% static 'Img/food1.jpg' %}">
+                </div>
+
+            </div>.
+            <div class = "second">
+                <h2>Team</h2>
+                <div class="bau">
+                    <div class = "me">
+                        <img src="{% static 'Img/me-modified.png' %}" style="width:128px;height:128px;">
+                        <h4>Raj Shakya</h4>
+                        <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam maxime optio, laudantium sapiente voluptatem vel fugit, tenetur quibusdam, placeat quos distinctio officia labore porro quidem delectus recusandae totam non. Necessitatibus tempora atque repudiandae quos quod, tenetur ipsum corrupti aliquam similique facilis explicabo ad deserunt blanditiis beatae dolorem delectus dolores assumenda.
+                        </p> 
+                    </div>              
+                    <div class = "her">
+                        <img src="{% static 'Img/internet-modified.png' %}" style="width:128px;height:128px;">
+                        <h5>The internet</h5>
+                        <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam maxime optio, laudantium sapiente voluptatem vel fugit, tenetur quibusdam, placeat quos distinctio officia labore porro quidem delectus recusandae totam non. Necessitatibus tempora atque repudiandae quos quod, tenetur ipsum corrupti aliquam similique facilis explicabo ad deserunt blanditiis beatae dolorem delectus dolores assumenda.
+                        </p> 
+                    </div>  
+
+                </div>            
+
+            </div>
+
+            <div class="third">
+                <div class="con">
+                    <h3>How it came to be</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Deserunt quas eos excepturi omnis, dignissimos molestias 
+                    dolore perferendis provident quia natus placeat. Ipsum alias 
+                    eos architecto. Nulla laudantium inventore dicta sapiente!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

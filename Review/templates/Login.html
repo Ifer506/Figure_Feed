@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login and Registration</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JavaScript Bundle with Popper -->
+    {% load static %}
+    {% include 'navbar.html'%}
+
+    <!-- <link rel = "stylesheet" type="text/css" href="/food/static/css/log.css"> -->
+    <link rel = "stylesheet" type="text/css" href="{% static 'css/log.css' %}" >
+    
+</head>
+<body>
+
+    {% block content %}
+    <div class = "bod"  >
+        
+        <div class ="Form">
+            <div class ="but-box">
+                <div class ="bot" id ="bat"></div>
+                <button type = "button" class ="toggle" onclick="lagin()">Login</button>
+                <button type = "button" class ="toggle" onclick="regis()">Register</button>
+            </div>
+            <div>
+                <!-- <div class="title">
+                    <h1> Welcome </h1>
+                </div> -->
+
+
+                <form id ="login" action="/login" class ="bhag"  method="post" >
+                    {% csrf_token %}
+                    <input type="text" class="bhara" placeholder="Username" required>
+                  
+                    <input type="text" class="bhara" placeholder="Password" required >
+
+                    
+
+                    <button type ="submit" class="lakha">Login</button> 
+                </form>
+            </div>
+
+            <div>
+                <form id ="Signin" action="/signin" class ="bhag" method="post">
+                    {% csrf_token %}
+                    <input type="text" name = "User" class="bhara" placeholder="Username" required>
+                    <input type="text" name = "Email" class="bhara" placeholder="Email" required>
+                    
+                    <input type="text" name = "Password" class="bhara" placeholder="Password" required >
+
+                    <input type="text" name = "Password" class="bhara" placeholder="Confirm Password" required >
+                    <input type="checkbox" class = "chk" required><span>I agree to all terms and condition</span>
+                    <button type ="submit" class="lakha">Sign Up</button> 
+                </form>
+            </div>
+
+            
+
+
+        </div>        
+
+    </div>
+
+    <script>
+        
+        var x = document.getElementById("login");
+        var y = document.getElementById("Signin");
+        var z = document.getElementById("bat");
+
+        function regis(){
+            x.style.left = "-450px";
+            y.style.left = "30px"
+            z.style.left = "90px"
+        }
+
+        function lagin(){
+            x.style.left = "30px";
+            y.style.left = "450px"
+            z.style.left = "0px"
+        }
+    </script>
+    
+
+    {% endblock %}
+    
+</body>
+</html>
